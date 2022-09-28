@@ -25,6 +25,10 @@ body{
     color: #252B42;
 }
 
+.logo--footer{
+    color: #FFFFFF;
+}
+
 .header__icons{
     display: flex;
     gap: 1rem;
@@ -60,8 +64,11 @@ body{
 
 .note__title{
     color: #252B42;
-    font-size: 2.5rem;
     margin-bottom: 4rem;
+}
+
+.note__title--text-big{
+    font-size: 2.5rem;
 }
 
 .note__title--uppercase{
@@ -86,12 +93,15 @@ body{
 .btn{
     color: white;
     background: #FFA62B;
-    border-radius: 2.3125rem;
     padding: 0.625rem 2.25rem;
     border: none;
     font-weight: 700;
     font-size: 0.875rem;
     line-height: 1.75rem;
+}
+
+.btn--rounded-full{
+    border-radius: 2.3125rem;
 }
 
 .btn--space-below{
@@ -231,16 +241,128 @@ body{
 .socials{
     display: flex;
     gap: 1rem;
-    justify-content: center;
 }
 
 .form-cta{
-    padding: 3rem 2rem;
     background: url('./assets/cover-cta.png');
     background-position: center;
     background-repeat: no-repeat;
-    height: 74.875rem;
+    height: 60rem;
 }
+
+
+.note__title--left{
+    text-align: left;
+}
+
+.note__subtitle{
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #252B42;
+}
+
+.form{
+    padding: 3rem 2rem;
+}
+
+.form__field {
+    width: 100%;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    margin: .75rem 0rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.3125rem;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.btn--radius-small{
+    border-radius: 0.3125rem;
+}
+
+.btn--width-full{
+    width: 100%;
+}
+
+.contact{
+    padding: 3rem 2rem;
+    background: #FAFAFA;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+.note__title--space-below-none{
+    margin-bottom: 0;
+}
+
+.note__title--text-small{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+/* Footer */
+
+.footer{
+    padding: 3rem 2rem;
+    background: #252B42;
+    color: #FFF;
+}
+
+.footer__header{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.footer__links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.subscription{
+    width: 100%;
+    display: flex;
+    background: red;
+}
+
+.subscription__input{
+    width: 60%;
+    outline: none;
+}
+
+.btn--footer{
+    width: 40%;
+}
+
+.subscription__text{
+    font-size: 0.75rem;
+    line-height: 1.75rem;
+}
+
+.post-script{
+    padding: 3rem 2rem;
+    background: #16697A;
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
