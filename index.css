@@ -109,7 +109,7 @@ body{
     background: #FAFAFA;
 }
 
-.services{
+.deck{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin-top: 2rem;
@@ -120,6 +120,7 @@ body{
     background: #FFFFFF;
     border: 0.0625rem solid #E8E8E8;
     padding: 2.1875rem 2.5rem;
+    
 }
 
 .card__header{
@@ -179,7 +180,7 @@ body{
     font-size: 0.875rem;
     line-height: 1.5rem;
     letter-spacing: 0.0125rem;
-    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .card__avatar{
@@ -190,17 +191,55 @@ body{
 .card__persona{
     display: flex;
     align-items: center;
-
-}
-
-.card__professional-details{
-    display: flex;
-    /* flex-direction: column; */
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .card__name{
     color: #FFA62B;
+}
+
+.team{
+    padding: 3rem 2rem;
+    background: #FAFAFA;
+}
+
+.card--no-padding{
+    padding: 0;
+}
+
+
+
+.card__image{
+    width: 100%;
+}
+
+.card__name--black{
+    color: #252B42;
+}
+
+.card__name--strengthened{
+    font-weight: 700;
+}
+
+.card__bio{
+    display: grid;
+    justify-content: center;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.socials{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.form-cta{
+    padding: 3rem 2rem;
+    background: url('./assets/cover-cta.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 74.875rem;
 }
 
 
