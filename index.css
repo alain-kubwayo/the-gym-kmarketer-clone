@@ -15,6 +15,7 @@ body{
 .header__container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo{
@@ -151,31 +152,44 @@ body{
 
 .experts{
     background: #F3F3F3;
-    padding: 3rem 2rem;
 }
-
 
 .experts__video-backdrop{
     background: #0C353D;
-    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 10rem;
+    padding-bottom: 3rem;
+}
+
+.experts__video-container{
+    margin-top: -4rem;
     position: relative;
+    width: 80%;
+    height: 20rem;
 }
 
 .experts__video{
-    position: absolute;
-    width: 75%;
-    left: 12.5%;
-    right: 12.5%;
-    top: -8.5rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
-.experts__play-btn{
+.experts__btn-container{
     position: absolute;
-    width: 33.3%;
-    left: 33.3%;
-    right: 33.3%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
+
 
 .testimonials{
     background: #FAFAFA;
