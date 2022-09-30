@@ -7,7 +7,7 @@ body{
 }
 
 /* Header */
-.header--desktop-screen{
+.header--desktop{
     display: none;
 }
 
@@ -39,7 +39,7 @@ body{
     gap: 1rem;
 }
 
-.header__search-icon, .header__cart-icon, .header__hamburger-icon{
+.header__icon{
     height: 1rem;
     width: 1rem;
 }
@@ -74,6 +74,7 @@ body{
 .note__title{
     color: #252B42;
     margin-bottom: 4rem;
+    font-size: 2.5rem;
 }
 
 .note__title--text-big{
@@ -101,18 +102,18 @@ body{
     margin-top: 4rem;
 }
 
-.btn--half-width{
-    width: 50%;
-}
 
 .btn{
     color: white;
-    background: #FFA62B;
     padding: 0.625rem 2.25rem;
     border: none;
     font-weight: 700;
     font-size: 0.875rem;
     line-height: 1.75rem;
+}
+
+.btn--fill{
+    background: #FFA62B;
 }
 
 .btn--rounded-full{
@@ -366,9 +367,10 @@ body{
 
 }
 
-.subscription__text{
+.in-touch__label{
     font-size: 0.75rem;
     line-height: 1.75rem;
+    margin: 0;
 }
 
 
@@ -398,24 +400,37 @@ body{
 
 .subscription{
     display: flex;
-    width: 100%;
     align-items: center;
 }
 
 .subscription__field{
     padding-top: 1rem;
     padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    border-top-left-radius: 0.313rem;
+    border-bottom-left-radius: 0.313rem;
+    flex-grow: 2;
     border: none;
     outline: none;
 }
 
-.subscription__btn{
+.subscription-btn{
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background: #FFA62B;
-    color: #FAFAFA;
     border: none;
-    outline: none;
+    flex-grow: 1;
+    background: #FFA62B;
+    color: #FFF;
+    border-top-right-radius: 0.313rem;
+    border-bottom-right-radius: 0.313rem;
+}
+
+.desktop-line-break{
+    display: none;
+}
+
+.experts__video-desktop{
+    display: none;
 }
 
 
@@ -423,17 +438,17 @@ body{
 /* Desktop Styles */
 @media only screen and (min-width: 768px){
     /* Header */
-    .header--mobile-screen{
+    .header--mobile{
         display: none;
     }
 
-    .header--desktop-screen{
+    .header--desktop{
         display: block;
         padding-left: 10rem;
         padding-right: 10rem;
     }
 
-    .mission--desktop-screen{
+    .mission--desktop{
         padding-left: 10rem;
         padding-right: 10rem;
     }
@@ -458,6 +473,10 @@ body{
         display: none;
     }
 
+    .desktop-line-break{
+        display: block;
+    }
+
     .note__title--desktop{
         font-size: 3.625rem;
         line-height: 5rem;
@@ -472,16 +491,17 @@ body{
         justify-content: center;
         align-items: flex-start;
         gap: 2rem;
+        padding: 5rem;
     }
 
-    .deck--desktop-screen{
+    .deck--desktop{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin-top: 2rem;
         gap: 1rem;
     }
 
-    .choice--desktop-screen{
+    .choice--desktop{
         padding-top: 4rem;
         padding-bottom: 3rem;
     }
@@ -491,26 +511,31 @@ body{
         background-repeat: no-repeat;
     }
 
-    .form--desktop-screen{
+    .form--desktop{
         width: 45%;
     }
 
-    .form__inputs__desktop-screen, .form__selects__desktop-screen{
+    .form__inputs--desktop{
         display: flex;
         gap: 0.5rem;
     }
 
-    .contact--desktop-screen{
+    .form__selects--desktop{
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .contact--desktop{
         display: flex;
         justify-content: space-between;
     }
 
-    .btn--desktop-screen{
+    .btn--desktop{
         width: auto;
         padding: 0.9375rem 2.5rem;
     }
 
-    .note__description--desktop-screen{
+    .note__description--desktop{
         text-align: left;
     }
 
@@ -577,10 +602,7 @@ body{
     .header{
         padding: 3rem 2rem;
     }
-
-    /* .header{
-        padding: 3rem 2rem;
-    } */
+   
 
     .header{
         padding: 3rem 8rem;
@@ -618,7 +640,6 @@ body{
         padding: 3rem 8rem;
     }
 
-
     .contact{
         display: flex;
         flex-direction: row;
@@ -634,13 +655,28 @@ body{
         justify-content: center;
     }
     
-    .btn--half-width{
-        width: 30%;
+    .btn--desktop{
+        padding: 0.625rem 2.25rem;
     }
 
     .post-script{
-
         text-align: left;
+    }
+
+    .experts__video-desktop{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .experts__video{
+        display: none;
+    }
+
+    .experts__video-container{
+        width: 60%;
     }
 
 }
